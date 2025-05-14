@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Tasty Kitchen - Your Cart</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="index.html" class="nav__logo">Tasty.ke</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact us</a></li>
+                        <li class="nav__item">
+                            <a href="cart.html" class="nav__link active-link">
+                                <i class='bx bx-cart'></i>
+                                <span class="cart-count" id="cart-count">0</span>
+                            </a>
+                        </li>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== CART BANNER ==========-->
+            <section class="menu-banner">
+                <div class="menu-banner__container bd-container">
+                    <h1 class="menu-banner__title">Your Cart</h1>
+                    <p class="menu-banner__subtitle">Review and complete your delicious order</p>
+                </div>
+            </section>
+
+            <!--========== CART ITEMS ==========-->
+            <section class="cart-section section bd-container">
+                <div class="cart-container">
+                    <div class="cart-empty" id="cart-empty">
+                        <i class='bx bx-cart-alt cart-empty__icon'></i>
+                        <h2 class="cart-empty__title">Your cart is empty</h2>
+                        <p class="cart-empty__text">Browse our menu to add some delicious items!</p>
+                        <a href="menu.html" class="button">View Menu</a>
+                    </div>
+
+                    <div class="cart-items" id="cart-items">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+
+                    <div class="cart-summary" id="cart-summary">
+                        <div class="cart-summary__row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">Ksh 0.00</span>
+                        </div>
+                        <div class="cart-summary__row">
+                            <span>Delivery fee:</span>
+                            <span id="cart-delivery">Ksh 100.00</span>
+                        </div>
+                        <div class="cart-summary__row cart-summary__total">
+                            <span>Total:</span>
+                            <span id="cart-total">Ksh 0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-actions">
+                        <a href="menu.html" class="button button-outline">Continue Shopping</a>
+                        <a href="#" class="button" id="checkout-btn">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Tasty Kitchen</a>
+                    <span class="footer__description">Restaurant</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Event</a></li>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li>Kiambu - Kenya</li>
+                        <li>Tasty Kitchen Ke</li>
+                        <li>+254 716 176 560</li>
+                        <li>support@tastykitchen.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 Xamara Tech. All right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+        
+        <!--========== CART JS ==========-->
+        <script src="assets/js/cart.js"></script>
+    </body>
+</html>
