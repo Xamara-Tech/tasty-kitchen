@@ -584,3 +584,121 @@ img{
         height: 640px;
     }
 }
+
+
+
+
+/* ======================================= */
+
+home/iggy/dev/xamara/responsive-website-restaurant/assets/css/styles.css */
+
+/* Add these styles to your existing styles.css file */
+
+/* Menu Banner */
+.menu-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin-top: var(--header-height);
+    padding: 2rem 0;
+}
+
+.menu-banner__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: .5rem;
+}
+
+.menu-banner__subtitle {
+    font-size: var(--normal-font-size);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Menu Navigation */
+.menu-navigation__container {
+    padding: 1rem 0;
+    background-color: var(--body-color);
+    position: sticky;
+    top: var(--header-height);
+    z-index: var(--z-fixed);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.menu-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu-navigation__link {
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
+
+.menu-navigation__link:hover {
+    color: var(--first-color);
+}
+
+/* Menu Section */
+.menu-section {
+    scroll-margin-top: calc(var(--header-height) + 70px);
+}
+
+/* Order CTA */
+.order-cta__container {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.order-cta__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: .5rem;
+}
+
+.order-cta__description {
+    margin-bottom: 1.5rem;
+}
+
+.order-cta__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button-alt {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.button-alt:hover {
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 768px) {
+    .menu-banner {
+        height: 300px;
+    }
+    
+    .menu-banner__title {
+        font-size: 3rem;
+    }
+    
+    .menu-navigation__list {
+        gap: 2rem;
+    }
+}
